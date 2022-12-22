@@ -1,0 +1,247 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.body {
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.modal {
+  position: fixed;
+  right: 5%;
+  z-index: 1;
+  border: 2px solid white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.modal-show {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  padding: 10px 50px;
+  width: max-content;
+  border-radius: 10px;
+}
+.modal-content p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#pizza-form {
+  position: sticky;
+  padding: 0 20px;
+  width: 400px;
+  height: 800px;
+  background-image: url(../images/bg-form.jpg);
+  /* background-color: white; */
+  margin-top: 20px;
+  margin-left: 150px;
+  border-radius: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: #000401;
+}
+.style-input {
+  display: block;
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgb(121, 121, 121);
+  padding: 10px;
+  display: block;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.smalls {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  border-radius: 3px;
+}
+.error-name {
+  visibility: visible;
+}
+.error-name_hid {
+  visibility: hidden;
+}
+.error-number {
+  visibility: visible;
+}
+.error-number_hid {
+  visibility: hidden;
+}
+.error-address {
+  visibility: visible;
+}
+.error-address_hid {
+  visibility: hidden;
+}
+.dough {
+  margin-top: 10px;
+}
+.dough strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+.dough select {
+  padding: 5px;
+  width: 30%;
+  border: 2px solid #f0f0f0;
+  border-radius: 3px;
+  font-weight: 700;
+  color: blue;
+}
+.size-pizza {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.size-pizza strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+.input-radio {
+  display: none;
+}
+.input-radio:checked + div {
+  background-color: green;
+  /* color: white; */
+}
+.input-radio:checked + div > p {
+  color: white;
+}
+.custom-radio {
+  display: inline-block;
+  padding: 15px 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #a3a1a1;
+}
+.custom-radio p {
+  margin: 0;
+  font-weight: bold;
+  color: blue;
+}
+.check_box {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  color: blue;
+}
+.check_box-strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+.check_box-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.check_box-right {
+  display: flex;
+  flex-direction: column;
+}
+.add {
+  font-size: 18px;
+  font-weight: 700;
+}
+.add-input {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 30px;
+}
+.item {
+  padding: 10px 20px;
+  list-style: none;
+  width: 430px;
+  height: 470px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 7px;
+  text-align: center;
+  color: black;
+  margin-bottom: 15px;
+}
+.submit-btn {
+  width: 100px;
+  height: 40px;
+  box-shadow: 4px 4px 5px 1px rgb(57, 53, 53);
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+  transition: 0.5s;
+  display: block;
+  margin: auto;
+  background-color: blue;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+.submit-btn:active {
+  box-shadow: none;
+}
+
+
+.btn-disable {
+  cursor: not-allowed;
+  pointer-events: none;
+
+  /*Button disabled - CSS color class*/
+  color: #c0c0c0;
+  background-color: #ffffff;
+}

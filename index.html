@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Pizza order</title>
+  </head>
+  <body class="body">
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-btn">X</button>
+        <p>Buyurtma qabul qilindi!</p>
+      </div>
+    </div>
+    <div class="container">
+      <form id="pizza-form">
+        <div class="title">
+          <h1>Pizza order</h1>
+        </div>
+        <div>
+          <label for="name-input">
+            <input
+              id="name-input"
+              type="text"
+              placeholder="User name"
+              class="style-input"
+              required
+            />
+            <small class="error-name error-name_hid smalls"
+              >the number of letters must be more than 4</small
+            >
+          </label>
+          <label for="number-input">
+            <input
+              id="number-input"
+              type="number"
+              placeholder="Phone number"
+              class="style-input"
+              required
+            />
+            <small class="error-number error-number_hid smalls"
+              >number of digits must be more than 8</small
+            >
+          </label>
+          <label for="address-input">
+            <input
+              id="address-input"
+              type="text"
+              placeholder="User address"
+              class="style-input"
+              required
+            />
+            <small class="error-address error-address_hid smalls"
+              >the number of letters must be more than 12</small
+            >
+          </label>
+        </div>
+        <div class="dough">
+          <strong>Dough thicknes:</strong>
+          <select name="dough-pizza" id="thicknes-pizza">
+            <option value="none">none</option>
+            <option value="Thin">Thin</option>
+            <option value="Medium">Medium</option>
+            <option value="Thick">Thick</option>
+          </select>
+        </div>
+        <div class="size-pizza">
+          <strong>Size:</strong>
+          <label>
+            <input type="radio" name="size" value="25" class="input-radio" />
+            <div class="custom-radio">
+              <p>25cm</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="size" value="30" class="input-radio" />
+            <div class="custom-radio">
+              <p>30cm</p>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="size" value="35" class="input-radio" />
+            <div class="custom-radio">
+              <p>35cm</p>
+            </div>
+          </label>
+        </div>
+        <strong class="check_box-strong">On Pizza:</strong>
+        <div class="check_box">
+          <div class="check_box-left">
+            <label>
+              <input type="checkbox" name="pizzaType" value="tomato" />
+              <span>Tomato</span>
+            </label>
+            <label>
+              <input type="checkbox" name="pizzaType" value="turkey meat " />
+              <span>Turkey meat</span>
+            </label>
+            <label>
+              <input type="checkbox" name="pizzaType" value="olive" />
+              <span>Olive</span>
+            </label>
+          </div>
+          <div class="check_box-right">
+            <label>
+              <input
+                type="checkbox"
+                name="pizzaType"
+                value="pickled cucumber"
+              />
+              <span>Pickled cucumber</span>
+            </label>
+            <label>
+              <input type="checkbox" name="pizzaType" value="mushroom" />
+              <span>Mushroom</span>
+            </label>
+            <label>
+              <input type="checkbox" name="pizzaType" value="horse meat" />
+              <span>Horse meat</span>
+            </label>
+          </div>
+        </div>
+        <strong class="add">Add:</strong>
+        <div class="add-input">
+          <label>
+            <input type="checkbox" name="addPizzaType" value="pepper" />
+            <span>Pepper</span>
+          </label>
+          <label>
+            <input type="checkbox" name="addPizzaType" value="sausages" />
+            <span>Sausages</span>
+          </label>
+        </div>
+        <div>
+          <button class="submit-btn btn-disable">Save</button>
+        </div>
+      </form>
+      <ul class="root"></ul>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
